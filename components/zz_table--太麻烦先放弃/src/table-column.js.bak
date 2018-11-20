@@ -1,0 +1,15 @@
+// table
+
+export default {
+  functional: true,
+
+  props: {
+    label: ''
+  },
+
+  render: function (h, { props, data, children }) {
+    const tag = 'td'
+
+    return h(tag, props.label)
+  }
+}
