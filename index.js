@@ -1,25 +1,25 @@
 // import
-import CBreadcrumb from './components/breadcrumb'
+// import CBreadcrumb from './components/breadcrumb'
 import CButton from './components/button'
-import CForm from './components/form'
+// import CForm from './components/form'
 // import CTable from './components/table'
-import CInput from './components/input'
-import CTextarea from './components/textarea'
-import CTree from './components/tree'
-import CPagination from './components/pagination'
-import CSection from './components/section'
+// import CInput from './components/input'
+// import CTextarea from './components/textarea'
+// import CTree from './components/tree'
+// import CPagination from './components/pagination'
+// import CSection from './components/section'
 
 // component list
 const components = [
-  CBreadcrumb,
+  // CBreadcrumb,
   CButton,
-  CForm,
+  // CForm,
   // CTable,
-  CInput,
-  CTextarea,
-  CTree,
-  CPagination,
-  CSection
+  // CInput,
+  // CTextarea,
+  // CTree,
+  // CPagination,
+  // CSection
 ]
 
 // install

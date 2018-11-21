@@ -1,34 +1,16 @@
 <template>
-  <button class="c-btn" :class="[`bg-${variant}`, `hover:bg-${variant}-dark`]">
+  <button class="c-btn" @click="handleClick" :style="styleObject">
     <slot></slot>
   </button>
 </template>
 
 <script>
+import btnMixin from '../../../mixins/btn'
 export default {
+  mixins: [btnMixin],
   name: 'c-button',
-  props: {
-    size: {
-      default: 'default'
-    },
-    variant: {
-      default: 'grey'
-    },
-    msg: String
-  },
-  data () {
-    return {
-      // menus: []
-    }
+  methods: {
+    // todo
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.c-btn {
-  @apply text-white py-2 px-4 rounded;
-  + .c-btn {
-    @apply ml-2
-  }
-}
-</style>

@@ -12,7 +12,7 @@
 export default {
   name: 'c-breadcrumb',
   props: {
-    label: ''
+    label: null
   },
   data () {
     return {
