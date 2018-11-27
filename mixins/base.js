@@ -12,10 +12,6 @@ const mixin = {
       type: [Boolean],
       default: null
     },
-    variant: {
-      type: [String],
-      default: null
-    },
     width: {
       type: [Number, String],
       default: null
