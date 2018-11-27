@@ -1,6 +1,45 @@
 
 .c-btn {
-  @apply p-2;
+  @apply px-4 py-2;
   @apply rounded;
   @apply border;
+
+  &:hover {
+    @apply opacity-75;
+  }
+
+  &:focus {
+    @apply outline-none;
+    @apply shadow-outline;
+  }
+}
+
+// 主要
+.c-btn-primary {
+  @apply text-white;
+  @apply bg-blue-dark;
+}
+
+// 信息
+.c-btn-info {
+  @apply text-white;
+  @apply bg-grey-dark;
+}
+
+// 成功
+.c-btn-success {
+  @apply text-white;
+  @apply bg-green-dark;
+}
+
+// 警告
+.c-btn-warning {
+  @apply text-white;
+  @apply bg-orange;
+}
+
+// 危险
+.c-btn-danger {
+  @apply text-white;
+  @apply bg-red;
 }

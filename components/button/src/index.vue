@@ -1,5 +1,14 @@
 <template>
-  <button class="c-btn" @click="handleClick" :style="styleObject">
+  <button class="c-btn"
+    :class="{
+      'c-btn-primary' : type === 'primary',
+      'c-btn-info' : type === 'info',
+      'c-btn-success' : type === 'success',
+      'c-btn-warning' : type === 'warning',
+      'c-btn-danger' : type === 'danger'
+    }"
+    @click="handleClick"
+    :style="styleObject">
     <slot></slot>
   </button>
 </template>
