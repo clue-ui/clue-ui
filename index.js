@@ -3,7 +3,7 @@
 import CButton from './components/button'
 // import CForm from './components/form'
 // import CTable from './components/table'
-// import CInput from './components/input'
+import CInput from './components/input'
 // import CTextarea from './components/textarea'
 // import CTree from './components/tree'
 // import CPagination from './components/pagination'
@@ -15,7 +15,7 @@ const components = [
   CButton,
   // CForm,
   // CTable,
-  // CInput,
+  CInput,
   // CTextarea,
   // CTree,
   // CPagination,

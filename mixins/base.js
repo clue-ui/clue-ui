@@ -4,10 +4,10 @@
  */
 const mixin = {
   props: {
-    disabled: {
-      type: [Boolean],
-      default: false
-    },
+    // disabled: {
+    //   type: [Boolean],
+    //   default: false
+    // },
     autofocus: {
       type: [Boolean],
       default: null
@@ -21,12 +21,10 @@ const mixin = {
     styleObject: function () {
       let style = {}
 
-      // get width
       if (this.width) {
         style.width = parseInt(this.width) + 'px'
       }
 
-      // return style
       return style
     }
   }

@@ -1,0 +1,32 @@
+.c-input {
+  @apply border;
+  @apply rounded;
+  @apply p-2;
+  @apply inline-block;
+
+  &:focus {
+    @apply outline-none;
+    @apply shadow-outline;
+  }
+
+  &:hover {
+    @apply border-blue-light;
+  }
+
+  .c-input__inner {
+    @apply bg-transparent;
+    @apply w-full;
+    &:focus {
+      @apply outline-none;
+    }
+  }
+}
+
+// readonly
+.c-input.readonly {
+  @apply bg-grey-lightest;
+  // @apply cursor-not-allowed;
+  .c-input__inner {
+    @apply cursor-not-allowed;
+  }
+}
