@@ -6,6 +6,7 @@ export default {
     type: {
       type: [String],
       default: null
+      // validator:
     }
   },
   methods: {

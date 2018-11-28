@@ -3,6 +3,10 @@ import base from './base'
 export default {
   mixins: [base],
   props: {
+    value: {
+      type: [String, Number],
+      default: null
+    },
     type: {
       type: [String],
       default: null

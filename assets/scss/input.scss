@@ -4,9 +4,9 @@
   @apply p-2;
   @apply inline-block;
 
-  &:focus {
-    @apply outline-none;
-    @apply shadow-outline;
+  &:focus-within {
+    // @apply shadow-outline;
+    @apply border-blue-light;
   }
 
   &:hover {
@@ -26,6 +26,15 @@
 .c-input.readonly {
   @apply bg-grey-lightest;
   // @apply cursor-not-allowed;
+
+  &:focus-within {
+    @apply border-grey-light;
+  }
+
+  &:hover {
+    @apply border-grey-light;
+  }
+
   .c-input__inner {
     @apply cursor-not-allowed;
   }

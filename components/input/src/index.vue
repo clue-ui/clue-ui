@@ -2,10 +2,11 @@
   <div class="c-input" :class="{'readonly' : readonly }">
     <input
       class="c-input__inner"
-      type="text"
+      :value="localValue"
+      @input="onInput"
       :type="type"
       :autofocus="autofocus ? 'autofocus' : null"
-      :autocomplete="autocomplete ? 'on' : null"
+      :autocomplete="autocomplete ? 'on' : 'off'"
       :readonly="readonly ? 'readonly' : null"
       :style="styleObject"
       :placeholder="placeholder">
@@ -17,8 +18,15 @@ import inputMixin from '../../../mixins/input'
 export default {
   name: 'c-input',
   mixins: [inputMixin],
-  data () {
-    return {}
+  computed: {
+    localValue: function () {
+      return this.value || ''
+    }
+  },
+  methods: {
+    onInput (e) {
+      this.$emit('input', e.target.value)
+    }
   }
 }
 </script>
