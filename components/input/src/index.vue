@@ -8,7 +8,6 @@
       :autofocus="autofocus ? 'autofocus' : null"
       :autocomplete="autocomplete ? 'on' : 'off'"
       :readonly="readonly ? 'readonly' : null"
-      :style="styleObject"
       :placeholder="placeholder">
   </div>
 </template>

@@ -1,0 +1,8 @@
+.c-textarea {
+  @apply border;
+
+  &:focus {
+    @apply outline-none;
+    @apply border-blue-light;
+  }
+}

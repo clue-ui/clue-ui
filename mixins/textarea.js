@@ -1,14 +1,10 @@
-// import base from './base'
+import style from './lib/style'
 
 export default {
-  // mixins: [base],
+  mixins: [style],
   props: {
     value: {
       type: [String, Number],
-      default: null
-    },
-    type: {
-      type: [String],
       default: null
     },
     autofocus: {
@@ -19,21 +15,14 @@ export default {
       type: [String],
       default: null
     },
-    autocomplete: {
-      type: [Boolean],
-      default: false
+    // 规定当提交表单时，文本区域中的文本应该怎样换行。可选值 hard|soft
+    wrap: {
+      type: [String],
+      default: null
     },
     readonly: {
       type: [Boolean],
       default: false
-    }
-  },
-  computed: {
-    styleObject: function () {
-      let style = {}
-
-      // return styleObject
-      return style
     }
   },
   methods: {
