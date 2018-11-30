@@ -13,7 +13,9 @@
 </template>
 
 <script>
+import btnMixin from '../../../mixins/btn'
 export default {
+  mixins: [btnMixin],
   name: 'c-pagination',
   props: {
     totalRows: {
@@ -101,43 +103,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.c-pagination {
-
-  @apply flex;
-  @apply justify-start;  // 对齐方式 justify-start;justify-center;justify-end;justify-between
-
-  .page-item {
-    @apply text-grey;
-    @apply border rounded outline-none;
-    @apply px-1 text-center select-none;
-    @apply cursor-pointer;
-    min-width: 1.5rem;
-    height: 1.5rem;
-    line-height: 1.5rem;
-
-    +.page-item {
-      @apply ml-1;
-    }
-
-    &:hover {
-      @apply text-grey-darker;
-    }
-
-    &:active {
-      @apply bg-grey;
-    }
-  }
-
-  .page-item.is-active {
-    @apply bg-teal-dark text-grey-lighter;
-  }
-
-  .page-tool {
-    @apply ml-2;
-    height: 1.5rem;
-    line-height: 1.5rem;
-  }
-}
-</style>

@@ -6,8 +6,8 @@ import CButton from './components/button'
 import CInput from './components/input'
 import CTextarea from './components/textarea'
 // import CTree from './components/tree'
-// import CPagination from './components/pagination'
-// import CSection from './components/section'
+import CPagination from './components/pagination'
+import CSection from './components/section'
 
 // component list
 const components = [
@@ -18,8 +18,8 @@ const components = [
   CInput,
   CTextarea,
   // CTree,
-  // CPagination,
-  // CSection
+  CPagination,
+  CSection
 ]
 
 // install

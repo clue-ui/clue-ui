@@ -1,0 +1,17 @@
+.c-section {
+  @apply border;
+  @apply shadow;
+
+  .c-section-header {
+    @apply border-b;
+  }
+
+  .c-section-body {
+
+  }
+
+  .c-section-footer {
+    @apply border-t;
+    @apply p-2;
+  }
+}
