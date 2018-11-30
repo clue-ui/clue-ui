@@ -1,9 +1,9 @@
-import Cpagination from './src';
+import CPagination from './src';
 import { registerComponent } from '../../utils/plugins'
 
 /* istanbul ignore next */
-Cpagination.install = function(Vue) {
-  registerComponent(Vue, Cpagination.name, Cpagination)
+CPagination.install = function(Vue) {
+  registerComponent(Vue, CPagination.name, CPagination)
 }
 
-export default Cpagination
+export default CPagination

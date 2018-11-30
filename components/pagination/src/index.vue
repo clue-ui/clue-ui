@@ -13,9 +13,7 @@
 </template>
 
 <script>
-import btnMixin from '../../../mixins/btn'
 export default {
-  mixins: [btnMixin],
   name: 'c-pagination',
   props: {
     totalRows: {

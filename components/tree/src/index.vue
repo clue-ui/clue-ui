@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="c-tree">
     <!-- title -->
     <slot name="before"></slot>
 

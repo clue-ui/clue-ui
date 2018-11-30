@@ -1,9 +1,9 @@
-import Csection from './src';
+import CSection from './src';
 import { registerComponent } from '../../utils/plugins'
 
 /* istanbul ignore next */
-Csection.install = function(Vue) {
-  registerComponent(Vue, Csection.name, Csection)
+CSection.install = function(Vue) {
+  registerComponent(Vue, CSection.name, CSection)
 }
 
-export default Csection
+export default CSection

@@ -1,0 +1,37 @@
+.c-breadcrumb {
+  @apply flex;
+  @apply list-reset;
+  @apply p-2;
+  @apply shadow;
+  @apply border;
+
+  .c-breadcrumb-label {
+    @apply pr-2;
+  }
+
+  .breadcrumb-item {
+    + .breadcrumb-item {
+      &::before {
+        display: inline-block;
+        content: '/';
+        @apply px-1;
+      }
+    }
+
+    +.breadcrumb-item:hover::before {
+      text-decoration: underline;
+    }
+
+    +.breadcrumb-item:hover::before {
+      text-decoration: none;
+    }
+
+    &.active {
+      color: blue;
+    }
+
+    a {
+      @apply no-underline;
+    }
+  }
+}

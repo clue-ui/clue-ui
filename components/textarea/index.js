@@ -1,9 +1,9 @@
-import Ctextarea from './src';
+import CTextarea from './src';
 import { registerComponent } from '../../utils/plugins'
 
 /* istanbul ignore next */
-Ctextarea.install = function(Vue) {
-  registerComponent(Vue, Ctextarea.name, Ctextarea)
+CTextarea.install = function(Vue) {
+  registerComponent(Vue, CTextarea.name, CTextarea)
 }
 
-export default Ctextarea
+export default CTextarea

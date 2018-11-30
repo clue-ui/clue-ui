@@ -1,6 +1,11 @@
+// import tailwind css options
 @import './assets/scss/tailwind.css';
+
+// import components style
+@import 'assets/scss/breadcrumb.scss';
 @import 'assets/scss/button.scss';
 @import 'assets/scss/input.scss';
 @import 'assets/scss/textarea.scss';
+@import 'assets/scss/tree.scss';
 @import 'assets/scss/section.scss';
 @import 'assets/scss/pagination.scss';
