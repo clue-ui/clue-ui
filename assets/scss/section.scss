@@ -4,6 +4,11 @@
 
   .c-section-header {
     @apply border-b;
+    @apply bg-grey-lighter;
+
+    .c-section-title {
+      @apply p-2;
+    }
   }
 
   .c-section-body {

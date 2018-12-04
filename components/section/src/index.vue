@@ -3,7 +3,7 @@
     <!-- header -->
     <div class="c-section-header" v-if="title || $slots.header">
       <slot name='header'>
-        <div>{{title}}</div>
+        <div class="c-section-title">{{title}}</div>
       </slot>
     </div>
 
