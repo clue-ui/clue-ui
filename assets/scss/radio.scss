@@ -1,0 +1,11 @@
+.c-radio {
+  @apply inline;
+
+  +.c-radio {
+    @apply ml-2;
+  }
+
+  .c-radio-label {
+    @apply ml-1;
+  }
+}

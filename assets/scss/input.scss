@@ -2,10 +2,9 @@
   @apply border;
   @apply rounded;
   @apply p-2;
-  @apply inline-block;
+  @apply w-full;
 
   &:focus-within {
-    // @apply shadow-outline;
     @apply border-blue-light;
   }
 
@@ -25,7 +24,6 @@
 // readonly
 .c-input.readonly {
   @apply bg-grey-lightest;
-  // @apply cursor-not-allowed;
 
   &:focus-within {
     @apply border-grey-light;

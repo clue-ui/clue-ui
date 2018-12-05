@@ -1,0 +1,11 @@
+.c-form {
+  .c-form-item {
+    @apply flex;
+    @apply items-center;
+    @apply my-4;
+
+    .c-form-item_content {
+      @apply flex-1;
+    }
+  }
+}

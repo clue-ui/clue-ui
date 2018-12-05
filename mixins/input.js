@@ -28,14 +28,6 @@ export default {
       default: false
     }
   },
-  computed: {
-    styleObject: function () {
-      let style = {}
-
-      // return styleObject
-      return style
-    }
-  },
   methods: {
     handleClick (e) {
       this.$emit('click', e)

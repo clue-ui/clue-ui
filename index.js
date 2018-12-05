@@ -1,7 +1,8 @@
 // import
 import CBreadcrumb from './components/breadcrumb'
 import CButton from './components/button'
-// import CForm from './components/form'
+import CForm from './components/form'
+import CRadio from './components/radio'
 // import CTable from './components/table'
 import CInput from './components/input'
 import CTextarea from './components/textarea'
@@ -13,7 +14,8 @@ import CSection from './components/section'
 const components = [
   CBreadcrumb,
   CButton,
-  // CForm,
+  CForm,
+  CRadio,
   // CTable,
   CInput,
   CTextarea,
