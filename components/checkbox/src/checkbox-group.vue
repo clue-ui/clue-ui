@@ -1,20 +1,20 @@
 <template>
-  <div class="c-radio-group">
+  <div class="c-checkbox-group">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'c-radio-group',
+  name: 'c-checkbox-group',
   props: {
     value: {
-      type: [String, Number],
-      default: null
+      type: [Array],
+      default: []
     }
   },
   created () {
-    this.$on('onChange', value => {
+    this.$on('onChange', (value) => {
       this.$emit('input', value)
     })
   }

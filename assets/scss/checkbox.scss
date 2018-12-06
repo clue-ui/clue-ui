@@ -1,0 +1,16 @@
+.c-checkbox {
+  @apply inline;
+
+  +.c-checkbox {
+    @apply ml-2;
+  }
+
+  .c-checkbox-label {
+    @apply ml-1;
+  }
+}
+
+// group
+.c-checkbox-group {
+
+}

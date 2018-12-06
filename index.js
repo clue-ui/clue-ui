@@ -1,6 +1,7 @@
 // import
 import CBreadcrumb from './components/breadcrumb'
 import CButton from './components/button'
+import CCheckbox from './components/checkbox'
 import CForm from './components/form'
 import CRadio from './components/radio'
 // import CTable from './components/table'
@@ -14,6 +15,7 @@ import CSection from './components/section'
 const components = [
   CBreadcrumb,
   CButton,
+  CCheckbox,
   CForm,
   CRadio,
   // CTable,
