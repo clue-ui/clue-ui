@@ -47,7 +47,7 @@ export default {
       const v = this.isGroup ? this.$parent.value : this.value
 
       // return
-      return v ? v : []
+      return v || []
     },
     isGroup: function () {
       if (this.$parent && this.$parent.$options._componentTag === 'c-checkbox-group') {

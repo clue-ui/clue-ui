@@ -28,7 +28,7 @@ const components = [
 
 // install
 const install = function (Vue) {
-  components.forEach( c => {
+  components.forEach(c => {
     Vue.use(c)
   })
 }

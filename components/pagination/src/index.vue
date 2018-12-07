@@ -41,7 +41,7 @@ export default {
   data () {
     return {
       posPage: 0,
-      currentPage: 1,
+      currentPage: 1
     }
   },
   watch: {
