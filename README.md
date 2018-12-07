@@ -5,7 +5,18 @@
 ```
 yarn add node-sass sass-loader
 yarn add tailwindcss --dev
+```
 
+### 在.postcssrc中引入tailwindcss配置文件
+```
+var tailwindcss = require('tailwindcss');
+
+module.exports = {
+  plugins: [
+    tailwindcss('src/clue-ui/assets/tailwind.js'),
+    require('autoprefixer')
+  ]
+}
 ```
 
 ### 在git项目中添加子项目, 推荐使用https方式, 为了能够保持更新, 请不要修改clue-ui中的文件
