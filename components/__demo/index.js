@@ -1,4 +1,4 @@
-import CButton from './src';
+import CButton from './src'
 import { registerComponent } from '../../utils/plugins'
 
 /* istanbul ignore next */

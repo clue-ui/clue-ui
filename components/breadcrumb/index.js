@@ -1,5 +1,5 @@
-import CBreadcrumb from './src';
-import CBreadcrumbItem from './src/breadcrumb-item';
+import CBreadcrumb from './src'
+import CBreadcrumbItem from './src/breadcrumb-item'
 import { registerComponent } from '../../utils/plugins'
 
 /* istanbul ignore next */

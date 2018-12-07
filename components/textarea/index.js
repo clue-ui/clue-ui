@@ -1,4 +1,4 @@
-import CTextarea from './src';
+import CTextarea from './src'
 import { registerComponent } from '../../utils/plugins'
 
 /* istanbul ignore next */

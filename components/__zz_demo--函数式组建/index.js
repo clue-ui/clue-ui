@@ -30,7 +30,7 @@ export default {
     }
 
     const children = []
-    for (var i = 0; i <5; i++) {
+    for (var i = 0 i <5 i++) {
       children.push(h('li', 'li-item-' + i))
     }
 

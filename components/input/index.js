@@ -1,4 +1,4 @@
-import CInput from './src';
+import CInput from './src'
 import { registerComponent } from '../../utils/plugins'
 
 /* istanbul ignore next */

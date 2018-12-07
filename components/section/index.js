@@ -1,4 +1,4 @@
-import CSection from './src';
+import CSection from './src'
 import { registerComponent } from '../../utils/plugins'
 
 /* istanbul ignore next */

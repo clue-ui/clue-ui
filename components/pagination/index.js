@@ -1,4 +1,4 @@
-import CPagination from './src';
+import CPagination from './src'
 import { registerComponent } from '../../utils/plugins'
 
 /* istanbul ignore next */

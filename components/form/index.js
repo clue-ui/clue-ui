@@ -1,5 +1,5 @@
-import CForm from './src';
-import CFormItem from './src/form-item';
+import CForm from './src'
+import CFormItem from './src/form-item'
 import { registerComponent } from '../../utils/plugins'
 
 /* istanbul ignore next */

@@ -1,5 +1,5 @@
-import CCheckbox from './src';
-import CCheckboxGroup from './src/checkbox-group';
+import CCheckbox from './src'
+import CCheckboxGroup from './src/checkbox-group'
 import { registerComponent } from '../../utils/plugins'
 
 /* istanbul ignore next */

@@ -1,4 +1,4 @@
-import CTree from './src';
+import CTree from './src'
 import { registerComponent } from '../../utils/plugins'
 
 /* istanbul ignore next */

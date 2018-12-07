@@ -1,5 +1,5 @@
-import CRadio from './src';
-import CRadioGroup from './src/radio-group';
+import CRadio from './src'
+import CRadioGroup from './src/radio-group'
 import { registerComponent } from '../../utils/plugins'
 
 /* istanbul ignore next */
