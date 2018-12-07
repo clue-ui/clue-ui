@@ -1,0 +1,22 @@
+.c-collapse {
+  // @apply border;
+  @apply overflow-hidden;
+
+  // header
+  .c-collapse-header {
+    @apply bg-grey-lighter;
+
+    &:hover {
+      @apply cursor-pointer;
+    }
+
+    .c-collapse-title {
+      @apply p-2;
+    }
+  }
+
+  // body
+  .c-collapse-body {
+    @apply m-2;
+  }
+}
