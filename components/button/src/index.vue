@@ -10,7 +10,9 @@
     @click="handleClick"
     :style="styleObject">
     <i class="c-btn-icon" :class="icon" aria-hidden="true" v-if="$props.icon"></i>
-    <slot></slot>
+    <span>
+      <slot></slot>
+    </span>
   </button>
 </template>
 
