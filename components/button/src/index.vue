@@ -9,7 +9,7 @@
     }"
     @click="handleClick"
     :style="styleObject">
-    <i class="c-btn-icon fa fa-search" v-if="$props.icon"></i>
+    <i class="c-btn-icon" :class="icon" aria-hidden="true" v-if="$props.icon"></i>
     <slot></slot>
   </button>
 </template>
