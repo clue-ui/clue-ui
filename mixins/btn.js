@@ -7,6 +7,10 @@ export default {
       type: [String],
       default: null
       // validator:
+    },
+    icon: {
+      type: [String],
+      default: null
     }
   },
   computed: {
