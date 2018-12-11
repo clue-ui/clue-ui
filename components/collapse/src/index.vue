@@ -3,6 +3,10 @@
     <!-- header -->
     <div class="c-collapse-header" @click="isFold = !isFold" v-if="title || $slots.header">
       <slot name='header'>
+        <i class="fa" :class="{
+          'fa-angle-right' : isFold,
+          'fa-angle-down' : !isFold
+        }" aria-hidden="true"></i>
         <div class="c-collapse-title">{{title}}</div>
       </slot>
     </div>

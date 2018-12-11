@@ -5,13 +5,20 @@
   // header
   .c-collapse-header {
     @apply bg-grey-lighter;
+    @apply p-2;
 
     &:hover {
       @apply cursor-pointer;
     }
 
+    .fa {
+      @apply w-6;
+      @apply text-center;
+    }
+
     .c-collapse-title {
-      @apply p-2;
+      @apply inline-block;
+      @apply select-none;
     }
   }
 
