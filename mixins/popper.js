@@ -1,40 +1,62 @@
 import Popper from '../utils/popper.js'
 
+/**
+ * popper.js
+ * @author x9ec4
+ * 参考 https://github.com/FezVrasta/popper.js
+ */
 export default {
-  data () {
-    return {
-      popperVisual: true,
-      popperInstance: null
+  props: {
+    /**
+     * [placement description]
+     * @type {Object}
+     *        auto      -start
+     *        top       -end
+     *        right
+     *        bottom
+     *        left
+     */
+    placement: {
+      type: [String],
+      default: 'bottom'
     }
   },
-  watch: {
-    popperVisual: function (val) {
-      if (val && this.popperInstance) {
-        this.popperInstance.update()
-      }
+  data () {
+    return {
+      popperInstance: null,
+      $popperEl: null
     }
   },
   mounted () {
-    var reference = document.querySelector('.my-button')
-    var popper = document.querySelector('.popper')
+    this.$popperEl = this.$refs['popper']
 
-    this.popperInstance = new Popper(reference, popper, {
-      placement: "bottom-start",
-      positionFixed: true,
-      onCreate: (data) => {
-        console.debug('[onCreate]:', data)
-      },
-      onUpdate: (data) => {
-        console.debug('[onUpdate]:', data)
-      }
+    this.popperInstance = new Popper(this.$el, this.$popperEl, {
+      placement: this.placement
+      // positionFixed: true,
+      // onCreate: (data) => {
+      //   console.debug('[onCreate]:', data)
+      // },
+      // onUpdate: (data) => {
+      //   console.debug('[onUpdate]:', data)
+      // }
     })
   },
   methods: {
     popperShow () {
-      // todo
+      if (this.$popperEl && this.popperInstance) {
+        this.$popperEl.style.display = null;
+        this.popperInstance.update()
+      }
     },
     popperHidden () {
-      //
+      if (this.$popperEl) {
+        this.$popperEl.style.display = "none";
+      }
+    }
+  },
+  destroy () {
+    if (this.popperInstance) {
+      this.popperInstance.destroy()
     }
   }
 }
