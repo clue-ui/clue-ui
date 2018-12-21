@@ -5,6 +5,7 @@ import CCheckbox from './components/checkbox'
 import CCollapse from './components/collapse'
 import CForm from './components/form'
 import CRadio from './components/radio'
+import CLane from './components/lane'
 import CPopover from './components/popover'
 // import CTable from './components/table'
 import CInput from './components/input'
@@ -22,6 +23,7 @@ const components = [
   CForm,
   CRadio,
   CPopover,
+  CLane,
   // CTable,
   CInput,
   CTextarea,

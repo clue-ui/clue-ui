@@ -7,7 +7,9 @@
       'c-btn-warning' : type === 'warning',
       'c-btn-danger' : type === 'danger'
     }"
-    @click="handleClick"
+    v-on:click="handleClick"
+    v-on:blur="handleBlur"
+    v-on:focus="handleFocus"
     :style="styleObject">
     <i class="c-btn-icon" :class="icon" aria-hidden="true" v-if="$props.icon"></i>
     <span>

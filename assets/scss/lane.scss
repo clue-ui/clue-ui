@@ -1,0 +1,39 @@
+.c-lane {
+  @apply border;
+  @apply flex-1;
+  @apply bg-teal-lightest;
+
+  .c-lane-item {
+    @apply border;
+    @apply p-2;
+    @apply m-2;
+    @apply text-center;
+    @apply text-white;
+    border: 2px solid green;
+  }
+
+  .c-lane-item.red {
+    @apply bg-red;
+  }
+
+  .c-lane-item.blue {
+    @apply bg-blue;
+  }
+
+  .c-lane-item.grey {
+    @apply bg-grey;
+  }
+
+  .c-lane-item.yellow {
+    @apply text-black;
+    @apply bg-yellow;
+  }
+
+  .c-lane-item.orange {
+    @apply bg-orange;
+  }
+
+  .c-lane-item.teal {
+    @apply bg-teal;
+  }
+}
