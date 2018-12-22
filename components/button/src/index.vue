@@ -8,8 +8,6 @@
       'c-btn-danger' : type === 'danger'
     }"
     v-on:click="handleClick"
-    v-on:blur="handleBlur"
-    v-on:focus="handleFocus"
     :style="styleObject">
     <i class="c-btn-icon" :class="icon" aria-hidden="true" v-if="$props.icon"></i>
     <span>
@@ -19,9 +17,9 @@
 </template>
 
 <script>
-import btnMixin from '../../../mixins/btn'
+import mixin from './mixin'
 export default {
-  mixins: [btnMixin],
+  mixins: [mixin],
   name: 'c-button',
   methods: {
     // todo

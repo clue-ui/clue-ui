@@ -35,18 +35,19 @@ export default {
   mounted () {
     this.popperVisual = false
 
-    var _this = this
-    document.onclick = function (e) {
-      console.debug('>>>>>>>>>>', e, _this)
-      _this.popperVisual = false
-    }
+    // 这里有个问题: 多个实例化组建会响应多次
+    document.addEventListener('click', this.autoHide)
   },
-  // destroyed () {
-  //   document.removeEventListener('click', this.autoHide);
-  // },
+  destroyed () {
+    document.removeEventListener('click', this.autoHide);
+  },
   methods: {
     autoHide (e) {
-      console.log('======', e)
+      if (this.$el.contains(e.target) === false) {
+        this.popperVisual = false
+      }
+
+      console.log('======', e, this.$el.contains(e.target))
     },
     onBlur () {
       console.debug('>>>>>>>>>>>>>:::blur')

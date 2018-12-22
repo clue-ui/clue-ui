@@ -24,12 +24,6 @@ export default {
   methods: {
     handleClick (e) {
       this.$emit('click', e)
-    },
-    handleBlur (e) {
-      this.$emit('blur', e)
-    },
-    handleFocus (e) {
-      this.$emit('focus', e)
     }
   }
 }
