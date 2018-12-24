@@ -16,34 +16,35 @@
   .c-btn-icon {
     @apply mr-1;
   }
+
+  // 主要
+  &.primary {
+    @apply text-white;
+    @apply #{$btn-bg-primary};
+  }
+
+  // 信息
+  &.info {
+    @apply text-white;
+    @apply #{$btn-bg-info};
+  }
+
+  // 成功
+  &.success {
+    @apply text-white;
+    @apply #{$btn-bg-success};
+  }
+
+  // 警告
+  &.warning {
+    @apply text-white;
+    @apply #{$btn-bg-warning};
+  }
+
+  // 危险
+  &.danger {
+    @apply text-white;
+    @apply #{$btn-bg-danger};
+  }
 }
 
-// 主要
-.c-btn-primary {
-  @apply text-white;
-  @apply bg-blue-dark;
-}
-
-// 信息
-.c-btn-info {
-  @apply text-white;
-  @apply bg-grey-dark;
-}
-
-// 成功
-.c-btn-success {
-  @apply text-white;
-  @apply bg-green-dark;
-}
-
-// 警告
-.c-btn-warning {
-  @apply text-white;
-  @apply bg-orange;
-}
-
-// 危险
-.c-btn-danger {
-  @apply text-white;
-  @apply bg-red;
-}

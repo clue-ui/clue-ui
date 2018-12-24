@@ -1,0 +1,56 @@
+.c-tag {
+  @apply inline-block;
+
+  @apply px-2 py-1;
+  @apply rounded;
+  @apply border;
+  // @apply cursor-pointer;
+
+  &:hover {
+    // @apply opacity-75;
+  }
+
+  // 主要
+  &.primary {
+    @apply text-white;
+    @apply #{$tag-bg-primary};
+    @apply #{$tag-border-primary};
+  }
+
+  // 信息
+  &.info {
+    @apply text-white;
+    @apply #{$tag-bg-info};
+    // @apply #{$tag-border-info};
+  }
+
+  // 成功
+  &.success {
+    @apply text-white;
+    @apply #{$tag-bg-success};
+    // @apply #{$tag-border-success};
+  }
+
+  // 警告
+  &.warning {
+    @apply text-white;
+    @apply #{$tag-bg-warning};
+    // @apply #{$tag-border-warning};
+  }
+
+  // 危险
+  &.danger {
+    @apply text-white;
+    @apply #{$tag-bg-danger};
+    // @apply #{$tag-border-danger};
+  }
+
+  .c-tag-close {
+    @apply cursor-pointer;
+    @apply opacity-25;
+
+    &:hover {
+      @apply opacity-75;
+    }
+  }
+}

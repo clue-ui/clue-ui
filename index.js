@@ -9,6 +9,7 @@ import CLane from './components/lane'
 import CPopover from './components/popover'
 // import CTable from './components/table'
 import CInput from './components/input'
+import CTag from './components/tag'
 import CTextarea from './components/textarea'
 import CTree from './components/tree'
 import CPagination from './components/pagination'
@@ -26,6 +27,7 @@ const components = [
   CLane,
   // CTable,
   CInput,
+  CTag,
   CTextarea,
   CTree,
   CPagination,

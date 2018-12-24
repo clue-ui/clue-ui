@@ -1,11 +1,11 @@
 <template>
   <button class="c-btn"
     :class="{
-      'c-btn-primary' : type === 'primary',
-      'c-btn-info' : type === 'info',
-      'c-btn-success' : type === 'success',
-      'c-btn-warning' : type === 'warning',
-      'c-btn-danger' : type === 'danger'
+      'primary' : type === 'primary',
+      'info' : type === 'info',
+      'success' : type === 'success',
+      'warning' : type === 'warning',
+      'danger' : type === 'danger'
     }"
     v-on:click="handleClick"
     :style="styleObject">
