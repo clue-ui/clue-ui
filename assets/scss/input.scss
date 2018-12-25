@@ -1,8 +1,9 @@
 .c-input {
+  @apply inline-block;
   @apply border;
   @apply rounded;
   @apply p-2;
-  @apply w-full;
+  // @apply w-full;
 
   &:focus-within {
     @apply border-blue-light;
