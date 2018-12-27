@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     onClick (e) {
-      this.$emit('close')
+      this.$emit('close', e)
     }
   }
 }
