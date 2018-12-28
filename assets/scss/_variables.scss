@@ -1,15 +1,24 @@
-// Variables
-// tailwind 变量使用
+// clue-ui 样式定义
+//
+// Note:
+//   使用 @apply #{$btn-bg-primary} 编写的样式可以直接使用tailwind变量
+//   参考官方手册 https://www.tailwindcss.cn/docs/colors
+//================================================================
 
-// $clue-theme-bgcolor: #38A89D;
-
-// btn
+// btn default
 $btn-bg-default:          'bg-white';
 $btn-bg-primary:          'bg-blue-dark';
 $btn-bg-info:             'bg-grey-dark';
 $btn-bg-success:          'bg-green-dark';
 $btn-bg-warning:          'bg-orange';
 $btn-bg-danger:           'bg-red';
+// btn shadow
+$btn-shadow-default:      '#F1F5F8';
+$btn-shadow-primary:      '#BCDEFA';
+$btn-shadow-info:         '#DAE1E7';
+$btn-shadow-success:      '#A2F5BF';
+$btn-shadow-warning:      '#FCD9B6';
+$btn-shadow-danger:       '#F9ACAA';
 
 // tag background-color
 $tag-bg-default:          'bg-white';

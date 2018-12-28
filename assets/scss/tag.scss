@@ -4,17 +4,13 @@
   @apply px-2 py-1;
   @apply rounded;
   @apply border;
-  // @apply cursor-pointer;
-
-  &:hover {
-    // @apply opacity-75;
-  }
+  @apply #{$tag-bg-default};
 
   // 主要
   &.primary {
     @apply text-white;
     @apply #{$tag-bg-primary};
-    @apply #{$tag-border-primary};
+    // @apply #{$tag-border-primary};
   }
 
   // 信息

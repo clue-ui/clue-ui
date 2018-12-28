@@ -1,8 +1,13 @@
+@mixin btn-shadow($color) {
+  box-shadow: 0 0 0 1px $color;
+}
 
 .c-btn {
   @apply px-4 py-2;
   @apply rounded;
   @apply border;
+  @apply border-grey-light;
+  @apply #{$btn-bg-default};
 
   &:hover {
     @apply opacity-75;
@@ -10,7 +15,8 @@
 
   &:focus {
     @apply outline-none;
-    @apply shadow-outline;
+    @apply opacity-100;
+    @include btn-shadow(#{$btn-shadow-default});
   }
 
   .c-btn-icon {
@@ -21,30 +27,45 @@
   &.primary {
     @apply text-white;
     @apply #{$btn-bg-primary};
+    &:focus {
+      @include btn-shadow(#{$btn-shadow-primary});
+    }
   }
 
   // 信息
   &.info {
     @apply text-white;
     @apply #{$btn-bg-info};
+    &:focus {
+      @include btn-shadow(#{$btn-shadow-info});
+    }
   }
 
   // 成功
   &.success {
     @apply text-white;
     @apply #{$btn-bg-success};
+    &:focus {
+      @include btn-shadow(#{$btn-shadow-success});
+    }
   }
 
   // 警告
   &.warning {
     @apply text-white;
     @apply #{$btn-bg-warning};
+    &:focus {
+      @include btn-shadow(#{$btn-shadow-warning});
+    }
   }
 
   // 危险
   &.danger {
     @apply text-white;
     @apply #{$btn-bg-danger};
+    &:focus {
+      @include btn-shadow(#{$btn-shadow-warning});
+    }
   }
 }
 
