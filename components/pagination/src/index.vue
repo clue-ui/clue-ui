@@ -1,6 +1,8 @@
 <template>
   <div class="c-pagination">
-    <button class="page-item" @click="onPrev">&lt;</button>
+    <button class="page-item" @click="onPrev">
+      <i class="fa fa-angle-left" aria-hidden="true"></i>
+    </button>
 
     <div class="page-item" v-for="p in posPage, limit" :key="p"
       @click="currentPage = posPage + p"
@@ -8,7 +10,9 @@
       {{ posPage + p }}
     </div>
 
-    <button class="page-item" @click="onNext">&gt;</button>
+    <button class="page-item" @click="onNext">
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </button>
   </div>
 </template>
 
@@ -24,7 +28,7 @@ export default {
       type: [Number],
       default: 10
     },
-    // 显示分页数量, 最低不能少于5条
+    // 显示分页数量, 最低不能少于5条, 这里有bug, 少于10页的也会展示10页
     limit: {
       type: [Number],
       default: 10
