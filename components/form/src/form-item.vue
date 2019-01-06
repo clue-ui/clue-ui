@@ -1,6 +1,9 @@
 <template>
   <div class="c-form-item">
-    <label style="width: 100px; text-align: right; padding-right: 15px;">{{ label }}</label>
+    <!-- label -->
+    <label v-if="label">{{ label }}</label>
+
+    <!--  content -->
     <div class="c-form-item_content">
       <slot></slot>
     </div>
