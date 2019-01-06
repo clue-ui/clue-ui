@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import inputMixin from '../../../mixins/input'
+import mixin from './mixin'
 export default {
   name: 'c-input',
-  mixins: [inputMixin],
+  mixins: [mixin],
   computed: {
     localValue: function () {
       return this.value || ''
