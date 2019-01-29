@@ -15,6 +15,8 @@ import CTextarea from './components/textarea'
 import CTree from './components/tree'
 import CPagination from './components/pagination'
 import CSection from './components/section'
+// wysiwyg
+import CWysiwygQuill from './components/wysiwyg-quill'
 
 // component list
 const components = [
@@ -33,7 +35,9 @@ const components = [
   CTextarea,
   CTree,
   CPagination,
-  CSection
+  CSection,
+  // wysiwyg
+  CWysiwygQuill
 ]
 
 // install
