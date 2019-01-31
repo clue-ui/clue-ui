@@ -47,10 +47,9 @@ export default {
   },
   mounted () {
     let el = this.$refs['editor-container']
-    let toolbar = this.$refs['editor-toolbar']
 
     let options = {
-      debug: 'info',
+      debug: 'false',                                      // 'error', 'warn', 'log', or 'info'
       modules: {
         // toolbar: '#editor-toolbar',
         toolbar: [
