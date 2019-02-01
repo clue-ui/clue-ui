@@ -5,10 +5,16 @@
       :value="localValue"
       @input="onInput"
       :type="type"
+      :maxlength="maxlength"
       :autofocus="autofocus ? 'autofocus' : null"
       :autocomplete="autocomplete ? 'on' : 'off'"
       :readonly="readonly ? 'readonly' : null"
       :placeholder="placeholder">
+
+      <!-- suffix -->
+      <slot name="suffix">
+        <!-- todo -->
+      </slot>
   </div>
 </template>
 

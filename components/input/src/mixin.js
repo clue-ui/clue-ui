@@ -1,7 +1,5 @@
-// import base from './base'
 
 export default {
-  // mixins: [base],
   props: {
     value: {
       type: [String, Number],
@@ -19,6 +17,10 @@ export default {
       type: [String],
       default: null
     },
+    maxlength: {
+      type: [Number],
+      default: null
+    },
     autocomplete: {
       type: [Boolean],
       default: false
@@ -26,11 +28,6 @@ export default {
     readonly: {
       type: [Boolean],
       default: false
-    }
-  },
-  methods: {
-    handleClick (e) {
-      this.$emit('click', e)
     }
   }
 }

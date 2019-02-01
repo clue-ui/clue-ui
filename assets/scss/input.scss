@@ -1,8 +1,7 @@
 .c-input {
-  @apply inline-block;
-  @apply border;
-  @apply rounded;
-  @apply p-2;
+  @apply inline-flex items-center;
+  @apply border rounded;
+  @apply px-2 py-1;
   @apply bg-white;
   @apply w-full;
 
@@ -11,11 +10,16 @@
   }
 
   .c-input__inner {
+    @apply flex-1;
     @apply bg-transparent;
-    @apply w-full;
     &:focus {
       @apply outline-none;
     }
+  }
+
+  .c-input__suffix {
+    @apply ml-2;
+    @apply text-grey;
   }
 }
 

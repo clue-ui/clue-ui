@@ -1,11 +1,15 @@
 .c-form {
   .c-form-item {
-    @apply flex;
-    @apply items-center;
-    @apply my-4;
+    +.c-form-item {
+      @apply mt-4;
+    }
+
+    .c-form-legend {
+      // todo
+    }
 
     .c-form-item_content {
-      @apply flex-1;
+      @apply my-1;
     }
   }
 }

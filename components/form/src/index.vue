@@ -1,6 +1,8 @@
 <template>
   <div class="c-form">
     <slot></slot>
+
+    <slot name="footer"></slot>
   </div>
 </template>
 

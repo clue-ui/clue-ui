@@ -1,13 +1,14 @@
 <template>
-  <div class="c-form-item">
-    <!-- label -->
-    <label v-if="label">{{ label }}</label>
+  <fieldset class="c-form-item">
+    <slot name="label">
+      <legend class="c-form-legend" v-if="label">{{ label }}</legend>
+    </slot>
 
     <!--  content -->
     <div class="c-form-item_content">
       <slot></slot>
     </div>
-  </div>
+  </fieldset>
 </template>
 
 <script>
