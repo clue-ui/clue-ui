@@ -70,6 +70,14 @@ export default {
     // new quill
     this.quill = new Quill(el,  options)
 
+    // events
+    this.quill.on('text-change', (event, ...args) => {
+      console.log('text-change:', event, args)
+      // if (event === 'text-change') {
+      //   console.log('editor-change:', event, args)
+      // }
+    })
+
     // 设置内容, 文本格式
     // this.quill.setText('Hello World!\n')
 
