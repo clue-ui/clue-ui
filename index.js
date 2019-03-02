@@ -16,7 +16,7 @@ import CTree from './components/tree'
 import CPagination from './components/pagination'
 import CSection from './components/section'
 // wysiwyg
-import CWysiwygQuill from './components/wysiwyg-quill'
+// import CWysiwygQuill from './components/wysiwyg-quill'
 
 // component list
 const components = [
@@ -37,7 +37,7 @@ const components = [
   CPagination,
   CSection,
   // wysiwyg
-  CWysiwygQuill
+  // CWysiwygQuill
 ]
 
 // install
