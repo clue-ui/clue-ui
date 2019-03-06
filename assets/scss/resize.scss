@@ -1,0 +1,52 @@
+.clue.c-resize {
+  @apply relative;
+  @apply flex;
+  @apply select-none;
+
+  .c-resize {
+    &.container {
+      @apply flex-1;
+      @apply overflow-auto;
+    }
+
+    &.anchor {
+      @apply bg-blue;
+      min-width: 4px;
+      min-height: 4px;
+    }
+  }
+
+  &.placement-top {
+    @apply flex-col;
+    @apply flex-col-reverse;
+
+    .anchor {
+      cursor: row-resize;
+    }
+  }
+
+  &.placement-bottom {
+    @apply flex-col;
+
+    .anchor {
+      cursor: row-resize;
+    }
+  }
+
+  &.placement-left {
+    @apply flex-row;
+    @apply flex-row-reverse;
+
+    .anchor {
+      cursor: col-resize;
+    }
+  }
+
+  &.placement-right {
+    @apply flex-row;
+
+    .anchor {
+      cursor: col-resize;
+    }
+  }
+}
