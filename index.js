@@ -5,7 +5,6 @@ import CCheckbox from './components/checkbox'
 import CCollapse from './components/collapse'
 import CForm from './components/form'
 import CRadio from './components/radio'
-import CResize from './components/resize'
 import CLane from './components/lane'
 import CPopover from './components/popover'
 // import CTable from './components/table'
@@ -16,7 +15,8 @@ import CTextarea from './components/textarea'
 import CTree from './components/tree'
 import CPagination from './components/pagination'
 import CSection from './components/section'
-// wysiwyg
+// 扩展组件需单独引入
+// import CResize from './components/resize'
 // import CWysiwygQuill from './components/wysiwyg-quill'
 
 // component list
@@ -27,19 +27,15 @@ const components = [
   CCollapse,
   CForm,
   CRadio,
-  CResize,
   CPopover,
   CLane,
-  // CTable,
   CInput,
   CTag,
   CTabs,
   CTextarea,
   CTree,
   CPagination,
-  CSection,
-  // wysiwyg
-  // CWysiwygQuill
+  CSection
 ]
 
 // install
