@@ -1,5 +1,7 @@
 .c-textarea {
-  @apply border;
+  @apply border rounded;
+  @apply p-1;
+  @apply bg-white;
 
   &:focus {
     @apply outline-none;
