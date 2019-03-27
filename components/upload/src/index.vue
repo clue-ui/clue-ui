@@ -2,7 +2,7 @@
   <div class="c-upload">
     <!-- 单文件上传 -->
     <div class="single-upload" v-if="multiple === false">
-      <input class="single-name" :value="filelist.length > 0 ? filelist[0].name : ''" disabled="disabled"></input>
+      <input class="single-name" :value="filelist.length > 0 ? filelist[0].name : ''" disabled="disabled"/>
       <button class="single-upload" @click="onSelectFile">上传图片</button>
     </div>
 
