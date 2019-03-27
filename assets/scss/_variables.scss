@@ -34,3 +34,17 @@ $tag-border-info:         'border-grey-dark';
 $tag-border-success:      'border-green-dark';
 $tag-border-warning:      'border-orange';
 $tag-border-danger:       'border-red';
+
+
+/**
+ * [文本超出多行就隐藏并且显示省略号]
+ * @param  {[type]} $line [description]
+ * @return {[type]}       [description]
+ */
+@mixin line-clamp($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+}

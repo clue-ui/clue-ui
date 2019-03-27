@@ -13,6 +13,7 @@ import CTag from './components/tag'
 import CTabs from './components/tabs'
 import CTextarea from './components/textarea'
 import CTree from './components/tree'
+import CUpload from './components/upload'
 import CPagination from './components/pagination'
 import CSection from './components/section'
 // 扩展组件需单独引入
@@ -31,6 +32,7 @@ const components = [
   CLane,
   CInput,
   CTag,
+  CUpload,
   CTabs,
   CTextarea,
   CTree,

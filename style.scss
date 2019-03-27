@@ -16,6 +16,7 @@
 @import 'assets/scss/input.scss';
 @import 'assets/scss/tag.scss';
 @import 'assets/scss/tabs.scss';
+@import 'assets/scss/upload.scss';
 @import 'assets/scss/textarea.scss';
 @import 'assets/scss/tree.scss';
 @import 'assets/scss/section.scss';
@@ -29,4 +30,11 @@
 }
 .router-link-exact-active {
   @apply text-teal-dark;
+}
+
+// 去除 focus 边框
+button, input {
+  &:focus {
+    @apply outline-none;
+  }
 }
